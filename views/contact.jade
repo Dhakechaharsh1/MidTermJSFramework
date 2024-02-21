@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Contact
+  form(action='/contact', method='POST')
+    .form-group
+      label(for='studentNumber') Student Number
+      input#studentNumber.form-control(type='text', name='studentNumber', required)
+    .form-group
+      label(for='firstName') First Name
+      input#firstName.form-control(type='text', name='firstName', required)
+    .form-group
+      label(for='lastName') Last Name
+      input#lastName.form-control(type='text', name='lastName', required)
+    .form-group
+      label(for='email') Email
+      input#email.form-control(type='email', name='email', required)
+    button.btn.btn-primary(type='submit') Submit
